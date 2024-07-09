@@ -1,0 +1,159 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    background-image: url('img/backgroud.jpg.jpg'); /* Caminho para a sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Mokoto; /* Exemplo de família de fonte */
+    color: #333; /* Cor do texto principal */
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    width: 100%;
+    height: 100px; /* Altura do cabeçalho */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content h1 {
+    font-family: Mokoto;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding-top: 120px; /* Altura do cabeçalho */
+    padding-bottom: 50px; /* Altura do rodapé */
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente para melhor legibilidade */
+    border-radius: 8px; /* Borda arredondada */
+    margin-bottom: 20px; /* Espaço entre as seções */
+    color: #000; /* Texto em preto */
+}
+
+section h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+}
+
+/* Estilo do rodapé */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo específico para cada seção */
+#portfolio,
+#sobre,
+#contato {
+    background-color: rgba(17, 17, 17, 0.5); /* Fundo semi-transparente */
+    color: #fff; /* Texto em branco para melhor contraste */
+}
+
+#contato p,
+#contato ul {
+    color: #fff; /* Altera a cor do texto dentro da seção de Contato para branco */
+}
+
+#portfolio {
+    /* Outros estilos aqui... */
+    text-align: center; /* Centralizar conteúdo se necessário */
+}
+
+#portfolio .banner {
+    max-width: 100%; /* Largura máxima da imagem */
+}
+
+#portfolio .banner img {
+    background-image: url("img/escotline.jpg.png");
+    width: 100%; /* Ajustar largura da imagem para ocupar 100% do container */
+    max-width: 800px; /* Largura máxima da imagem para controle */
+    display: block; /* Para garantir que a imagem se alinhe corretamente */
+    margin: 0 auto; /* Centralizar a imagem dentro do banner */
+}
+
+#portfolio {
+    /* Outros estilos aqui... */
+    background-image: url("img/"); /* Caminho para a sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0; /* Espaçamento interno para melhor visualização do conteúdo */
+    text-align: center; /* Centralizar conteúdo se necessário */
+}
+
+#portfolio .banner {
+    max-width: 800px; /* Largura máxima do conteúdo dentro do banner */
+    margin: 0 auto; /* Centralizar o banner na seção */
+    color: #fff; /* Cor do texto */
+}
+
+.banner {
+    height: 300px; /* altura desejada para o banner */
+    overflow: hidden; /* esconde qualquer parte da imagem que ultrapasse o tamanho do banner */
+    position: relative; /* necessário se quiser adicionar texto ou outros elementos sobre a imagem */
+}
+
+.banner img {
+    width: 100%; /* garante que a imagem ocupe toda a largura do container */
+    height: auto; /* mantém a proporção original da imagem */
+    display: block; /* remove espaços extras ao redor da imagem */
+}
